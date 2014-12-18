@@ -3,8 +3,7 @@ $(document).ready(function(){
   // $('.back_to_top').click(function(){
   //   alert("Clicked");
   // })
-  var menu = $('.nav');
-  var origOffsetY = menu.offset().top;
+  var origOffsetY = 1
   $('.back_to_top').hide();
   function scroll() {
     if ($(window).scrollTop() >= origOffsetY) {
