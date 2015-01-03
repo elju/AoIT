@@ -173,10 +173,10 @@
 			transition: opacity 0.25s ease-in-out;
 		}
 			
-			/*a.image:hover
+			a.image:hover
 			{
 				opacity: 0.9;
-			}*/
+			}
 		
 			.image img
 			{
@@ -770,9 +770,19 @@
 					transition: color 0.25s ease-in-out;
 				}
 
-			#nav > ul > li.active,
-			#nav > ul > li:hover
-			{
+			#nav li:after {
+				content: '';
+				display: block;
+				margin: auto;
+				height: 3px;
+				width: 0px;
+				background: transparent;
+				transition: width .5s ease, background-color .5s ease;
+			}
+
+			#nav li:hover:after {
+				width: 100%;
+				background: white;
 			}
 
 				#nav > ul > li.active > a,
@@ -787,11 +797,6 @@
 						color: #fff;
 					}
 			
-					#nav > ul > li.active > a > span,
-					#nav > ul > li:hover > a > span
-					{
-						color: #444442;
-					}
 /*********************************************************************************/
 /* Banner                                                                        */
 /*********************************************************************************/
