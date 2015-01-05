@@ -128,7 +128,7 @@
 	
 	#banner-wrapper
 	{
-		padding: 3em 0 3em 0;
+		padding: 1em 0 1em 0;
 		background-color: #E4E5DE;
 	}
 	
@@ -170,14 +170,22 @@
 
 	#nav
 	{
-		position: fixed;
-		top: 0;
 		left: 0;
 		height: 70px;
 		width: 100%;
 		z-index: 99;
-		background: rgba(0,0,0,.3);
+		background: rgba(0,0,0,.8);
 	}
+
+		.nav_abs{
+			position: absolute;
+			bottom: 0;
+		}
+
+		.nav_fixed{
+			position: fixed;
+			top: 0;
+		}
 
 		#nav > ul{
 			padding-top: 1em;
@@ -282,18 +290,18 @@
 /*********************************************************************************/
 
 .carousel{
-  height: 500px;
+  height: 35em;
   background-color: black;
   margin: 0;
 }
 .carousel .item{
-    height: 500px;
+    height: 35em;
     margin-bottom: 60px;
     width: 100%;
     background-color: black;
 }
 .carousel-inner> .item > img{
-  height: 500px;
+  height: 35em;
   width: 100%;
 }
 
@@ -323,7 +331,7 @@
 			width: 35px;
 			height: 141px;
 			margin-top: -70px;
-			background: url('images/bracket.svg');
+			background: url('../images/bracket.svg');
 			opacity: 0.15;
 		}
 		

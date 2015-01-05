@@ -3,13 +3,18 @@ $(document).ready(function(){
   // $('.back_to_top').click(function(){
   //   alert("Clicked");
   // })
-  var origOffsetY = 1
+  var menu = $('#nav');
+  var origOffsetY = menu.offset().top;
   $('.back_to_top').hide();
   function scroll() {
     if ($(window).scrollTop() >= origOffsetY) {
-      $('.back_to_top').fadeIn(900);
+      $('.back_to_top').fadeIn(500);
+      $('#nav').removeClass('nav_abs');
+      $('#nav').addClass('nav_fixed');
     } else {
-      $('.back_to_top').fadeOut(900);
+      $('#nav').addClass('nav_abs');
+      $('#nav').removeClass('nav_fixed');
+      $('.back_to_top').fadeOut(500);
     }
   }
   document.onscroll = scroll;
